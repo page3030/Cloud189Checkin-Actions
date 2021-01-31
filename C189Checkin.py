@@ -6,11 +6,11 @@ username = ""
 password = ""
 
 # Server酱报错推送提醒，需要填下下面的key，官网：https://sc.ftqq.com/3.version
-SCKEY = ""
+SCKEY = "SCU156487T73697748711476aa9ef430ec053828c2601563bbaf510"
 
 
 def pushMessage(data):
-    if SCKEY != "":
+    if SCKEY != "SCU156487T73697748711476aa9ef430ec053828c2601563bbaf510":
         return requests.post(f"https://sc.ftqq.com/{SCKEY}.send", data=data)
     else:
         return False
