@@ -10,7 +10,7 @@ SCKEY = "SCU156487T73697748711476aa9ef430ec053828c2601563bbaf510"
 
 
 def pushMessage(data):
-    if SCKEY != "SCU156487T73697748711476aa9ef430ec053828c2601563bbaf510":
+    if SCKEY != "":
         return requests.post(f"https://sc.ftqq.com/{SCKEY}.send", data=data)
     else:
         return False
